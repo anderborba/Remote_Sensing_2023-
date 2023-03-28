@@ -22,6 +22,7 @@
 import numpy as np
 import os.path
 ## Used to read images in the mat format
+## Used to read images in the mat format
 #import scipy.io as sio
 ## Used to equalize histograms in images
 #from skimage import exposure
@@ -43,6 +44,7 @@ import os.path
 import polsar_basics as pb
 #import polsar_loglikelihood as plk
 import polsar_fusion as pf
+#import polsar_plot as pplot
 #import polsar_total_loglikelihood as ptl
 import polsar_evidence_lib as pel
 import polsar_plot as pplt
@@ -273,6 +275,7 @@ img_rt = nrows/ncols
 ## Uses the Pauli decomposition to generate a visible image
 PI = pb.show_Pauli(img, 1, 0)
 PI_AUX = pb.show_Pauli(img, 1, 0)
+#pplot.show_image_pauli_to_file_set_unless_img(PI,"LAM_image")
 #
 ## Define the radius in the ROI
 x0, y0, xr, yr = pb.define_radiais(RAIO, NUM_RAIOS, dx, dy, nrows, ncols, alpha_i, alpha_f)
