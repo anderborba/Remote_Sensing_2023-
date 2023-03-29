@@ -375,6 +375,12 @@ def image_contrast_brightness(IM):
     beta  = 0.0
     IMAUX = alpha * IM + beta
     return IMAUX
+#
+def image_contrast_brightness_optical(IM):
+    alpha = 0.8
+    beta  = 0.0
+    IMAUX = alpha * IM + beta
+    return IMAUX
 #def plot_3d_edge(nrows, ncols, image_name):
     #directory = './figuras/'
     #figure = str(figure_name) + '.pdf'
